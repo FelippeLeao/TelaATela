@@ -25,6 +25,7 @@
         android:id="@+id/btnMover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="abrir_tela_2"
         android:text="Mover!"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

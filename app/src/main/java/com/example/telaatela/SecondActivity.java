@@ -1,6 +1,8 @@
 package com.example.telaatela;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,10 @@ public class SecondActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void abrir_tela_1(View view){
+        Intent it_tela1 = new Intent(this, MainActivity.class);
+        startActivity(it_tela1);
+    }
+
 }

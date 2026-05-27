@@ -1,6 +1,8 @@
 package com.example.telaatela;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void abrir_tela_2(View view){
+        Intent it_tela2 = new Intent(this, SecondActivity.class);
+        startActivity(it_tela2);
     }
 }
